@@ -3,6 +3,7 @@ const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
+const obfuscate = require('gulp-obfuscate'); // Importando a biblioteca de obfuscação
 
 function comprimeimagem() {
     return gulp.src('./source/images/*')
@@ -12,10 +13,9 @@ function comprimeimagem() {
 
 function comprimejavascript() {
     return gulp.src('./source/scripts/*.js')
-    .pipe(uglify())
-    .pipe(obfuscate())
-    .pipe(gulp.dest('./build/scripts'))
-
+        .pipe(uglify())
+        .pipe(obfuscate()) // Utilizando o plugin de obfuscação
+        .pipe(gulp.dest('./build/scripts'));
 }
 
 function compilasass(){
@@ -29,7 +29,7 @@ function compilasass(){
 }
 
 exports.default = function(){
-    gulp.watch('./source/styles/*.scss', {ignoreinitial:false}, gulp.series(compilasass));
-    gulp.watch('./source/scripts/*.js', {ignoreinitial:false}, gulp.series(comprimejavascript));
-    gulp.watch('./source/images/*', {ignoreinitial:false}, gulp.series(comprimeimagem));
+    gulp.watch('./source/styles/*.scss', {ignoreInitial: false}, gulp.series(compilasass));
+    gulp.watch('./source/scripts/*.js', {ignoreInitial: false}, gulp.series(comprimejavascript));
+    gulp.watch('./source/images/*', {ignoreInitial: false}, gulp.series(comprimeimagem));
 }
