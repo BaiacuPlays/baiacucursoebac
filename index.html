@@ -2,34 +2,177 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício boas práticas de CSS</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Clone Stardew Valley</title>
+    <link rel="stylesheet" href="./main.css">
 </head>
+
 <body>
-    <div class="produtos">
-        <div class="produto">
-            <img class="produto__imagem" src="https://via.placeholder.com/100x100">
-            <h4 class="produto__nome">Nome do produto</h4>
-            <p class="produto__descricao">
-                Descrição do produto
-            </p>
-        </div>
-        <div class="produto__em--destaque">
-            <img class="produto__imagem" src="https://via.placeholder.com/100x100">
-            <h4 class="produto__nome">Nome do produto</h4>
-            <p class="produto__descricao">
-                Descrição do produto
-            </p>
-        </div>
-        <div class="produto">
-            <img class="produto__imagem" src="https://via.placeholder.com/100x100">
-            <h4 class="produto__nome">Nome do produto</h4>
-            <p class="produto__descricao">
-                Descrição do produto
-            </p>
-        </div>
-    </div>
+   
+    <header class="d-flex justify-between align-center w-100">
+        <img class="logo-icon" src="./src/images/icones/logo.png" alt="logo">
+        <img class="menu-icon" src="./src/images/icones/dropdown menu.png" alt="menu icon">
+        <nav class="dropdown-nav closed">
+            <a href="#hero">
+                <img src="./src/images/icones/home-icon.png" alt="home-icon">
+                Home
+            </a>
+            <a href="#locations">
+                <img src="./src/images/icones/locations-icon.png" alt="locations icon">
+                Locais
+            </a>
+            <a href="#villagers">
+                <img src="./src/images/icones/villagers-icon.png" alt="villagers icon">
+                Aldeões
+            </a>
+            <a href="#contact">
+                <img src="./src/images/icones/pergunta.png" alt="questions icon">
+                Contato
+            </a>
+        </nav>
+    </header>
+    <main>
+      
+        <div class="hero-bg"></div>
+        <section id="hero">
+            <img class="title" src="./src/images/logo.png" alt="title">
+            <img class="hero-img" src="./src/images/hero.png" alt="flat image">
+        </section>
+      
+        <section id="locations">
+            <h2 class="mb-20">Locais</h2>
+            <div class="d-flex flex-wrap w-100 justify-center">
+                <div class="location-box">
+                    <img src="./src/images/locais/ferreiropng.png" alt="blacksmith">
+                    <p>Ferreiro</p>
+                </div>
+                <div class="location-box">
+                    <img src="./src/images/locais/centro comunitario.png" alt="community center">
+                    <p>Centro Comunitario</p>
+                </div>
+                <div class="location-box">
+                    <img src="./src/images/locais/joja.png" alt="jojamart">
+                    <p>Mercado JoJa</p>
+                </div>
+                <div class="location-box">
+                    <img src="./src/images/locais/xlinix.PNG" alt="clinic">
+                    <p>Clinica Médica</p>
+                </div>
+                <div class="location-box">
+                    <img src="./src/images/locais/LIVRARIA.PNG" alt="museum">
+                    <p>Museu</p>
+                </div>
+                <div class="location-box">
+                    <img src="./src/images/locais/casa do prefeito.png" alt="mayors manor">
+                    <p>Mansão do prefeito</p>
+                </div>
+            </div>
+        </section>
+      
+        <section id="map"></section>
+  
+        <section id="villagers">
+            <h2 class="mb-20">Aldeões</h2>
+            <div class="d-flex flex-wrap w-100 justify-center">
+                <div class="villager-box">
+                    <img src="./src/images/aldeoes/Alex.png" alt="blacksmith">
+                    <p>Alex</p>
+                </div>
+                <div class="villager-box">
+                    <img src="./src/images/aldeoes/Abigail.png" alt="community center">
+                    <p>Abigail</p>
+                </div>
+                <div class="villager-box">
+                    <img src="./src/images/aldeoes/Elliott.png" alt="jojamart">
+                    <p>Elliott</p>
+                </div>
+                <div class="villager-box">
+                    <img src="./src/images/aldeoes/Emily.png" alt="clinic">
+                    <p>Emily</p>
+                </div>
+                <div class="villager-box">
+                    <img src="./src/images/aldeoes/Harvey.png" alt="museum">
+                    <p>Harvey</p>
+                </div>
+                <div class="villager-box">
+                    <img src="./src/images/aldeoes/Haley.png" alt="mayors manor">
+                    <p>Haley</p>
+                </div>
+                <div class="villager-box">
+                    <img src="./src/images/aldeoes/Sam.png" alt="mayors manor">
+                    <p>Sam</p>
+                </div>
+                <div class="villager-box">
+                    <img src="./src/images/aldeoes/Leah.png" alt="mayors manor">
+                    <p>Leah</p>
+                </div>
+                <div class="villager-box">
+                    <img src="./src/images/aldeoes/Sebastian.png" alt="mayors manor">
+                    <p>Sebastian</p>
+                </div>
+                <div class="villager-box">
+                    <img src="./src/images/aldeoes/Maru.png" alt="mayors manor">
+                    <p>Maru</p>
+                </div>
+                <div class="villager-box">
+                    <img src="./src/images/aldeoes/Shane.png" alt="mayors manor">
+                    <p>Shane</p>
+                </div>
+                <div class="villager-box">
+                    <img src="./src/images/aldeoes/Penny.png" alt="mayors manor">
+                    <p>Penny</p>
+                </div>
+            </div>
+        </section>
+       
+        <section id="contact">
+            <form id="question" action="/" method="post" >
+                <fieldset>
+                    <div class="d-flex">
+                        <img src="./src/images/icones/pergunta.png" alt="ask icon">
+                        <div>
+                            <h2>Envie sua pergunta</h2>
+                            <legend class="mb-20">* obrigatorio</legend>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <label for="name">Nome*</label>
+                            <input id="name" type="text" class="input-style" placeholder="Andrei" required>
+                        </li>
+                        <li>
+                            <label for="email">Email*</label>
+                            <input id="email" type="email" class="input-style" placeholder="andrei@email.com" required>
+                        </li>
+                        <li>
+                            <label for="email">Sua mensagem*</label>
+                            <textarea id="" class="input-style" cols="20" rows="10"></textarea>
+                        </li>
+                    </ul>
+                    <button id="submitBtn" type="submit" form="question" value="Submit">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+       
+        <footer id="footerStyle" class="d-flex flex-wrap flex-col justify-center align-center">
+            <div class="d-flex flex-wrap flex-col justify-center align-center">
+                <img src="./src/images/logo.png" class="mb-20" alt="logo">
+                <img src="./src/images/footer/ca_logo.gif" class="mb-20" alt="concernedape logo">
+            </div>
+            <div class="d-flex flex-wrap flex-col justify-center align-center">
+                <div class="d-flex mb-20">
+                    <a target="_blank" href="https://twitter.com/concernedape"><img src="./src/images/footer/twitter.png" alt="twitter"></a>
+                    <a target="_blank" href="https://www.facebook.com/StardewValley"><img src="./src/images/footer/facebook.png" alt="facebook"></a>
+                    <a target="_blank" href="https://www.reddit.com/r/StardewValley/"><img src="./src/images/footer/reddit.png" alt="reddit"></a>
+                    <a target="_blank" href="https://discordapp.com/invite/StardewValley"><img src="./src/images/footer/discord.png" alt="discord"></a>
+                </div>
+                <a href="#hero">
+                    <img src="./src/images/footer/seta.png">
+                </a>
+            </div>
+        </footer>
+    </main>
+    
+    <script src="./src/scripts/main.js"></script>
 </body>
 </html>

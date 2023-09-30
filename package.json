@@ -1,0 +1,25 @@
+{
+  "name": "projeto-4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp watch",
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BaiacuPlays/projeto4",
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.67.0"
+  },
+
+  "description": ""
+}}
